@@ -1,0 +1,5 @@
+Minify here:
+https://www.willpeavy.com/tools/minifier/
+
+Escape here:
+https://www.freeformatter.com/json-escape.html#before-output

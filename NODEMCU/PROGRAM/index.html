@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Chicken Feeder</title>
+    <style>
+        body {
+            height: 100vh;
+        }
+
+        button {
+            font-size: 2rem;
+            width: 200px;
+            margin: 10px;
+            height: 100px;
+            background-color: orange;
+            color: white;
+            border: none;
+            border-radius: 20px;
+
+        }
+
+        .column {
+            flex-direction: column;
+        }
+
+        .center {
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+
+        .time {
+            font-size: 6rem;
+            width: 10rem;
+            height: 10rem;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .times {
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body class="column center">
+    <h1 class="rows column">Chicken Feeder V1.0</h1>
+    <div class="center">
+        <form method="GET" action="/on">
+            <button type="submit">ON</button>
+        </form>
+        <form method="GET" action="/off">
+            <button type="submit">OFF</button>
+        </form>
+    </div>
+    <form action="/set" class="center column">
+        <p>Use 24 hour format</p>
+        <div class="times center">
+            <input class="time" type="text" name="hour" placeholder="HH">
+            <input class="time" type="text" name="mins" placeholder="MM">
+        </div>
+        <button type="submit">Add to Schedule</button>
+    </form>
+</body>
+
+</html>
